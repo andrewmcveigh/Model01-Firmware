@@ -7,7 +7,7 @@ ifeq ($(UNAME_S),Darwin)
 SKETCHBOOK_DIR ?= $(HOME)/Documents/Arduino
 PACKAGE_DIR ?= $(HOME)/Library/Arduino15
 else
-SKETCHBOOK_DIR ?= $(HOME)/Arduino
+SKETCHBOOK_DIR ?= $(HOME)/code/arduino
 PACKAGE_DIR ?= $(HOME)/.arduino15
 endif
 
@@ -50,6 +50,6 @@ endif
 
 
 BOARD_HARDWARE_PATH ?= $(SKETCHBOOK_DIR)/hardware
-KALEIDOSCOPE_PLUGIN_MAKEFILE_DIR ?= keyboardio/avr/build-tools/makefiles/
+KALEIDOSCOPE_PLUGIN_MAKEFILE_DIR ?= keyboardio/avr/build-tools/makefiles
 
 include $(BOARD_HARDWARE_PATH)/$(KALEIDOSCOPE_PLUGIN_MAKEFILE_DIR)/rules.mk
